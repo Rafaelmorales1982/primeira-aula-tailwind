@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--UTILIZANDO TAILWIND-->
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <title>Tailwind CSS</title>
+  </head>
+  <body>
+    <!--Inicio Header-->
+    <header class="container p-4 mx-auto">
+      <nav class="flex justify-between">
+        <a class="underline text-blue-600 hover:text-blue-800" href="./index.html">Marca</a>
+
+        <ul class="flex gap-6 ">
+          <li><a class="text-blue-600 hover:text-blue-800 p-2 " href="./curriculum.html">Curriculum</a></li>
+          <li><a class="text-blue-600 hover:text-blue-800 p-2 "  href="./grid.html">Trabalhando GRID</a></li>
+          <li><a class="text-blue-600 hover:text-blue-800 p-2 "  href="./nivacraft.html">Nivacraft</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--FIM Inicio Header-->
+
+   <!--modificador *:bg-gray-300-->
+    <div class="grid grid-cols-3 *:bg-gray-300 *:p-4 gap-4">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </div>
+
+<!--Valor arbitrário grid-cols-[1fr_2fr_3fr] -->
+    <div class="grid grid-cols-[1fr_2fr_3fr]  *:bg-pink-500 *:p-4 gap-4 mt-4">
+      <div class="col-span-full">Item 1</div>
+      <div class="col-span-2">Item 2</div>
+      <div class="col-span-3 row-end-4">Item 3</div>
+      <div>Item 4</div>
+
+    </div>
+
+
+  </body>
+</html>
